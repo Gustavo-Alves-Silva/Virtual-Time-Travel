@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;1,700&family=Oswald:wght@200;400;700&family=Roboto:ital,wght@0,100;0,300;0,500;1,100;1,300;1,500&display=swap');
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
+
+ 	
+    
+      /* Estilos gerais */
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+      
+      /* Estilos para o cabeçalho */
+      header {
+        background-color: #333;
+        color: white;
+        padding: 20px;
+        text-align: center;
+      }
+      
+      /* Estilos para os cards */
+      .card {
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+        margin: 10px;
+        overflow: hidden;
+        width: 300px;
+      }
+      
+      .card img {
+        width: 100%;
+      }
+      
+      .card h3 {
+        background-color: #333;
+        color: white;
+        margin: 0;
+        padding: 10px;
+        text-align: center;
+      }
+      
+      .card p {
+        padding: 10px;
+        text-align: justify;
+      }
+      
+      /* Estilos para os botões */
+      button {
+        background-color: #333;
+        border: none;
+        border-radius: 5px;
+        color: white;
+        cursor: pointer;
+        padding: 10px 20px;
+      }
+
+      main {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 1000px;
+        margin: 0 auto;
+      }
+      
+      a{
+        color: #FFF;
+			text-decoration: none;
+			font-weight: bold;
+      }
+      button:hover {
+        background-color: #666;
+      }

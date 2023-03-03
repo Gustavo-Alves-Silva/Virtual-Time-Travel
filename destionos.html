@@ -1,0 +1,174 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Viagens no tempo</title>
+    <style>
+      /* Estilos gerais */
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+      
+      /* Estilos para o cabeçalho */
+      header {
+        background-color: #333;
+        color: white;
+        padding: 20px;
+        text-align: center;
+      }
+      
+      /* Estilos para os cards */
+      .card {
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+        margin: 10px;
+        overflow: hidden;
+        width: 300px;
+      }
+      
+      .card img {
+        width: 100%;
+      }
+      
+      .card h3 {
+        background-color: #333;
+        color: white;
+        margin: 0;
+        padding: 10px;
+        text-align: center;
+      }
+      
+      .card p {
+        padding: 10px;
+        text-align: justify;
+      }
+      
+      /* Estilos para os botões */
+      button {
+        background-color: #333;
+        border: none;
+        border-radius: 5px;
+        color: white;
+        cursor: pointer;
+        padding: 10px 20px;
+      }
+
+      main {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 1000px;
+        margin: 0 auto;
+      }
+      
+      a{
+        color: #000000;
+			text-decoration: none;
+			font-weight: bold;
+      }
+      button:hover {
+        background-color: #666;
+      }
+      .carousel {
+  display: flex;
+  overflow: hidden;
+}
+
+.card {
+  flex: 0 0 100%;
+  margin-right: 20px;
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.card.active {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px 5px 0 0;
+}
+
+.card-text {
+  padding: 10px;
+  font-size: 20px;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+button {
+  margin: 0 10px;
+  padding: 10px 20px;
+  font-size: 20px;
+  border-radius: 5px;
+  border: none;
+  background-color: #ccc;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #aaa;
+}
+
+
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Viagens no tempo</h1>
+      <a href="index.html" class="btn">TO GO BACK</a>
+    </header>
+    <main>
+
+        <div class="carousel">
+            <div class="card active">
+              <img src="https://picsum.photos/300/200" alt="Card image">
+              <div class="card-text">Card 1</div>
+            </div>
+            <div class="card">
+              <img src="https://picsum.photos/300/200" alt="Card image">
+              <div class="card-text">Card 2</div>
+            </div>
+            <div class="card">
+              <img src="https://picsum.photos/300/200" alt="Card image">
+              <div class="card-text">Card 3</div>
+            </div>
+          </div>
+          <div class="controls">
+            <button id="prev">Prev</button>
+            <button id="next">Next</button>
+          </div>
+
+
+      <!-- <div class="card">
+        <h3>Viagem ao futuro</h3>
+        <img src="img/futuro.jfif" alt="">
+        <p>Imagine poder viajar mil anos no futuro. Como seria o mundo? Teríamos carros voadores? Cidades flutuantes? Robôs superinteligentes? Descubra as possibilidades incríveis de uma viagem ao futuro.</p>
+        <button>Comprar ingressos</button>
+      </div>
+      <div class="card">
+        <h3>Viagem ao passado</h3>
+        <img src="img/presente.jfif" alt="">
+        <p>Volte no tempo e experimente momentos históricos como se estivesse lá. Conheça o Egito Antigo, a Grécia Clássica, a Revolução Industrial e muito mais. Viva aventuras inesquecíveis em uma viagem ao passado.</p>
+        <button>Comprar ingressos</button>
+      </div>
+      <div class="card">
+        <h3>Viagem ao presente</h3>
+        <img src="img/passado.jfif" alt="">
+        <p>Explore o mundo atual e conheça as maravilhas que a humanidade criou. Visite os maiores arranha-céus, os parques naturais mais deslumbrantes e as cidades mais vibrantes. Embarque em uma viagem ao presente.</p>
+        <button>Comprar ingressos</button>
+      </div> -->
+    </main>
+  </body>
+</html>
